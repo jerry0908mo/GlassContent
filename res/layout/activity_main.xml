@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout android:id="@+id/bottons" android:layout_width="fill_parent"
+        android:orientation="horizontal"   android:layout_height="wrap_content" 
+        android:gravity="center_horizontal" android:layout_alignParentBottom="true">
+        
+        <Button android:id="@+id/do_gc_btn" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/do_gc" 
+                android:layout_weight="9"
+                />
+     
+      <Button android:id="@+id/show_gc_list_btn" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	 android:text="@string/show_gc_list" android:layout_weight="1" />
+        
+    </LinearLayout>
+     
+
+ <ScrollView   android:layout_alignParentTop="true"   
+     android:layout_above="@id/bottons"
+     android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <TableLayout
+        android:id="@+id/input_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+        <TableRow android:background="@drawable/line_bg">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:textColor="#FF0000"
+                android:text="@string/lable_doc_data" />
+
+        </TableRow>
+
+        <TableRow  >
+
+            <TextView  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/input_b_precent" />
+
+            <EditText android:id="@+id/input_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5" android:inputType="numberDecimal"
+                android:hint="@string/unit_precent"/>
+        </TableRow>
+
+        <TableRow  >
+
+            <TextView  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/input_a_precent" />
+
+            <TextView android:id="@+id/input_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"       />
+        </TableRow>
+
+        <TableRow android:background="@drawable/line_bg">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:textColor="#FF0000"
+                android:text="@string/lable_experiment_data" />
+
+        </TableRow>
+        
+        <TableRow  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/input_x"    />
+
+            <EditText android:id="@+id/input_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"  
+                android:inputType="numberDecimal"
+                android:hint="@string/unit_weight_g" />
+        </TableRow>
+
+        <TableRow  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" 
+                android:text="@string/input_y" />
+
+            <EditText android:id="@+id/input_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"  
+                android:inputType="numberDecimal"
+                android:hint="@string/unit_weight_g" />
+        </TableRow>
+        
+        
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"   
+                android:text="@string/input_z" />
+
+            <EditText
+                android:id="@+id/input_z"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"  
+                android:inputType="numberDecimal"
+                android:hint="@string/unit_weight_g" />
+        </TableRow>
+        
+        <TextView android:id="@+id/gc_result"  android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:textSize="20sp"
+                android:textColor="#FF0000"  
+                android:gravity="center"  android:background="@drawable/line_bg"/>  
+                
+    </TableLayout>
+    
+     </ScrollView>
+    
+
+</RelativeLayout>

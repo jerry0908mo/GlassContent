@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="app_name">玻纤含量</string>
+    <string name="hello_world">玻纤含量</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="title_activity_main">计算玻纤含量</string>
+    <string name="title_activity_history">历史记录</string>
+    
+	<string name="input_b_precent">不能烧掉的物质的百分比<b>B(%)</b></string>
+	<string name="input_a_precent">能烧掉的物质百分比<b>A(%)</b></string>
+	
+	
+	<string name="unit_precent">百分比(%)</string>
+	<string name="unit_weight_g">单位：克</string>
+	
+	<string name="lable_doc_data">配方组分</string>
+	<string name="lable_experiment_data">试验测量数据</string>
+	
+	
+	<string name="input_x">坩埚的重量<b>X(g)</b></string>
+	<string name="input_y">燃烧前试样重量<b>Y(g)</b></string>
+	<string name="input_z">燃烧后坩埚和烧余料的重量<b>Z(g)</b></string>
+	
+	<string name="output_G">玻纤含量<b>G(%)</b></string>
+	
+	<string name="do_gc">计算玻纤含量</string>
+	<string name="show_gc_list">历史</string>
+	
+	<string name="read_output_R">主机转速R</string>
+	<string name="read_output_V">下料速度V</string>
+	<string name="read_output_N">玻纤股数N</string>
+	<string name="read_output_I">电流I</string>
+	
+	<string name="gc_result_string">本次玻纤含量为：%1$s </string>
+</resources>
